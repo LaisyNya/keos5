@@ -566,7 +566,7 @@ async function starts() {
 					anu = await fetchJson(`https://arugaz.my.id/api/wikien?q=${tels}`, {method: 'get'})
 					reply(anu.result)
 					break				
-				case 'ytmp3':
+				/*case 'ytmp3':
 					if (args.length < 1) return reply('Donde esta la URL?')
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
 					anu = await fetchJson(`https://mhankbarbar.tech/api/yta?url=${args[0]}&apiKey=${BarBarKey}`, {method: 'get'})
@@ -588,7 +588,7 @@ async function starts() {
 					client.sendMessage(from, thumb, image, {quoted: mek, caption: teks})
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, video, {mimetype: 'video/mp4', filename: `${anu.title}.mp4`, quoted: mek})
-					break
+					break*/
 				case 'trendtwit':
 					client.updatePresence(from, Presence.composing) 
                                         if (!isUser) return reply(mess.only.daftarB)
@@ -1049,7 +1049,7 @@ async function starts() {
 			       client.sendMessage(from, stdout, text, { quoted: mek })
 		           }
 	           })
-                   break
+                   /*break
                  case 'linkgroup':
 				case 'linkgrup':
 				case 'linkgc':
@@ -1081,7 +1081,7 @@ async function starts() {
 							})
 					} else {
 						reply('Acto fotográfico')
-					}
+					}*/
 					break
 
                       case 'bugreport':
